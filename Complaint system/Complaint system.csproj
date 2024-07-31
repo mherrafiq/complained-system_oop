@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66ECD208-F3C6-46CB-8451-6C75200E3217}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Complaint_system</RootNamespace>
+    <AssemblyName>Complaint system</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminmain.Designer.cs">
+      <DependentUpon>adminmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complain1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain1.Designer.cs">
+      <DependentUpon>Complain1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain2.Designer.cs">
+      <DependentUpon>Complain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complain3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain3.Designer.cs">
+      <DependentUpon>Complain3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complain4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain4.Designer.cs">
+      <DependentUpon>Complain4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complain5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain5.Designer.cs">
+      <DependentUpon>Complain5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datahold.cs" />
+    <Compile Include="delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issuesolving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issuesolving.Designer.cs">
+      <DependentUpon>issuesolving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solvedcomp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solvedcomp.Designer.cs">
+      <DependentUpon>solvedcomp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlogin.Designer.cs">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usermain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usermain.Designer.cs">
+      <DependentUpon>usermain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view.Designer.cs">
+      <DependentUpon>view.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminmain.resx">
+      <DependentUpon>adminmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain1.resx">
+      <DependentUpon>Complain1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain2.resx">
+      <DependentUpon>Complain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain3.resx">
+      <DependentUpon>Complain3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain4.resx">
+      <DependentUpon>Complain4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain5.resx">
+      <DependentUpon>Complain5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issuesolving.resx">
+      <DependentUpon>issuesolving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solvedcomp.resx">
+      <DependentUpon>solvedcomp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userlogin.resx">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usermain.resx">
+      <DependentUpon>usermain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view.resx">
+      <DependentUpon>view.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-1User-2-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-png-icon-male-user-icon-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-tech-background-image-of-desktop-notebook-and-computer-image_133044.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modern-laptop-computer-on-white-background-805x330.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-with-waving-pakistani-flag-vector-3440664.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-icon-green-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-login-comfirm-accept-person-id-green-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-login-comfirm-accept-person-id-green-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\df5pak_800x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1028948.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissclipart-delete-icon-png-clipart-computer-icons-trash-99aacd7a46ed1e43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\525691_484557681566517_1331423399_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Former_logo_of_Punjab_Police_Pakistan.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\525691_484557681566517_1331423399_n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KWSB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-pcrwr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-177-244113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
